@@ -11,8 +11,6 @@ export default function DesignDoc() {
           <Image 
             src={treasureBoxImage}
             alt="תיבת אוצר" 
-            width={700} 
-            height={700}
             className={styles.logoIcon}
           />
           <div className={styles.logoText}>תיבת אוצר</div>
@@ -95,9 +93,11 @@ export default function DesignDoc() {
         <h2 className={styles.sectionTitle}>◈ מה אנחנו לא בונים?</h2>
         <div className={styles.content}>
           <ul className={styles.list}>
+            <strong>
             <li>לא פלטפורמה לציבור הרחב </li>
             <li>לא מקום למכור יצירות</li>
             <li>לא רשת חברתית לאמנים</li>
+            </strong>
           </ul>
         </div>
       </section>
