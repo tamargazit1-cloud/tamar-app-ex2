@@ -1,0 +1,181 @@
+
+.container {
+  min-height: 100vh;
+  background: var(--color-background);
+  direction: rtl;
+  font-family: 'TheBasics', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Apply Narkiss Block to all headings and titles */
+.sectionTitle,
+.redBoxTitle,
+.redBoxLargeTitle,
+.logoText,
+.tagline,
+.categoryHeader h3,
+.designColumnTitle,
+.thanksColumn h3,
+.thanksTitle {
+  font-family: 'Narkiss Block TRIAL', sans-serif !important;
+}
+
+/* Header */
+.header {
+  background: var(--color-background);
+  padding: 2rem 1rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logoIcon {
+  width: 800px;
+  height: 800px;
+  border-radius: 8px;
+}
+
+
+.logoText {
+  color: var(--color-titles);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Narkiss Block TRIAL', sans-serif;
+}
+
+.tagline {
+  background:var(--color-titles);
+  color: var(--color-background);
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Sections */
+.section {
+  background: var(--color-background);
+  margin-bottom: 0.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.sectionTitle {
+  color: var(--color-titles);
+  font-size: 33.96px;
+  font-weight: 700;
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Narkiss Block TRIAL', sans-serif;
+  width: 360px;
+  height: auto;
+}
+
+.content {
+  color: #333;
+  line-height: 1.8;
+}
+
+.paragraph {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+/* Red Box */
+.redBox {
+  background: var(--color-titles);
+  color: white;
+  padding: 1.2rem 1rem;
+  margin: 2rem 0 1rem;
+  text-align: right;
+}
+
+.redBoxTitle {
+    margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: right;
+  font-family: 'Narkiss Block TRIAL', sans-serif;
+}
+
+
+/* Category Box */
+.categoryBox {
+  margin: 1rem 0;
+}
+
+.categoryBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: right;
+}
+
+.column h3 {
+  color: var(--color-titles);
+  margin: 0 0 0.7rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Narkiss Block TRIAL', sans-serif;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  position: relative;
+  padding-right: 1.2rem;
+}
+
+.list li::before {
+  content: '•';
+  position: absolute;
+  right: 0;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .header {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .logoIcon {
+    width: 50rem;
+    height: 20rem;
+  }
+
+  .logoText {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 1rem 0.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .paragraph {
+    font-size: 0.85rem;
+  }
+
+}

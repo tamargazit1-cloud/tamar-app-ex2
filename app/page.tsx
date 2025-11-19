@@ -1,54 +1,49 @@
 import Image from "next/image";
+import Link from "next/link";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main>
-      <div>
-        <h2>Welcome to the Product Jam Starter Kit</h2>
-        <p>
+    <main className={styles.main}>
+      <div className={styles.container}>
+        <h2 className={styles.title}>Welcome to the Product Jam Starter Kit</h2>
+        <p className={styles.subtitle}>
           Feel free to look around, edit the source code and navigate to the
           demos.
         </p>
-        <Image
-          src="/huji.svg"
-          alt="HUJI Logo"
-          width="80"
-          height="80"
-          priority
-        />
-        <Image
-          src="/bezalel.svg"
-          alt="Bezalel Logo"
-          className="item"
-          width="80"
-          height="80"
-          priority
-        />
-        <div>
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            faucibus sit amet nunc nec vehicula. Fusce ornare nec nulla non
-            imperdiet. Fusce vel sodales justo. Sed efficitur arcu lorem, at
-            iaculis odio ultricies et. Duis rutrum urna nec elit bibendum, sed
-            hendrerit nulla posuere. Vestibulum vestibulum, ante non tincidunt
-            posuere, dui arcu lacinia nisl, nec rhoncus massa arcu ac ipsum. Nam
-            congue interdum tortor, eu dignissim massa scelerisque vitae. Sed
-            ultricies bibendum congue. Praesent non magna id ligula maximus
-            luctus. Donec vitae nibh quis neque luctus sagittis et eget nunc.
-            Aliquam id ullamcorper lacus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Pellentesque habitant morbi tristique
-            senectus et netus et malesuada fames ac turpis egestas. Curabitur
-            tempor quis dolor a lacinia.
-          </p>
-          <ul>
-            <li>
-              Aliquam maximus tellus sed lacus venenatis, ac cursus eros mollis.
-            </li>
-            <li>In id ante sed sem pharetra molestie et vitae arcu.</li>
-            <li>Cras pharetra turpis at pretium elementum.</li>
-            <li>Donec ultrices felis vel lectus auctor iaculis.</li>
-          </ul>
+        <div className={styles.logos}>
+          <Image
+            src="/huji.svg"
+            alt="HUJI Logo"
+            width="80"
+            height="80"
+            priority
+          />
+          <Image
+            src="/bezalel.svg"
+            alt="Bezalel Logo"
+            className="item"
+            width="80"
+            height="80"
+            priority
+          />
+        </div>
+        <div className={styles.linksSection}>
+          <h3 className={styles.linksTitle}>Explore Projects</h3>
+          <div className={styles.linksGrid}>
+            <Link href="/tic-tac-toe" className={styles.card}>
+              <h4>🎮 Tic Tac Toe</h4>
+              <p>Play a classic game of Tic Tac Toe</p>
+            </Link>
+            <Link href="/art" className={styles.card}>
+              <h4>🎨 Art Gallery</h4>
+              <p>Browse art from The Met Museum</p>
+            </Link>
+            <Link href="/design" className={styles.card}>
+              <h4>📐 Design Doc</h4>
+              <p>תיבת אוצר - Museum Management System</p>
+            </Link>
+          </div>
         </div>
       </div>
     </main>
