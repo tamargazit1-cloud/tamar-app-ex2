@@ -255,12 +255,12 @@ export default function DesignDoc() {
           <div className={styles.column}>
             <h3>Exhibition (תערוכה)</h3>
             <ul className={styles.list}>
-              <li>exhibitionId -  מזהה ייחודי: int</li>
+              <li>exhibitionId -  מזהה ייחודי: int</li>
               <li>curatorId - מזהה האוצר : User</li>
               <li>title - שם התערוכה : string</li>
               <li>date - תאריכי פתיחה וסיום : timestamp</li>
               <li>venue - מקום התערוכה : string</li>
-              <li>pieces - מערך של id's של יצירות משתתפות</li>
+              <li>pieces - מערך של id&apos;s של יצירות משתתפות</li>
               <li>notification (התראה)</li>
               <li>notificationId - מזהה ייחודי: int</li>
               <li>userId- מזהה המשתמש שאליו נשלחה ההתראה: int</li>
